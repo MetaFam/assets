@@ -75,13 +75,11 @@
     <filter id="black-blur" y="-100%" width="300%" height="300%">
       <feGaussianBlur stdDeviation="10"/>
     </filter>
-    <linearGradient id="metagame-fill" x1="1058" x2="1059" y1="1850" y2="1750" gradientUnits="userSpaceOnUse">
-      <animate attributeName="y1" values="1850; 1849; 1850; 1851.5; 1850" dur="7s" repeatCount="indefinite"/>
-      <animate attributeName="y2" values="1750; 1749; 1750; 1751.5; 1750" dur="8s" repeatCount="indefinite"/>
-      <stop style="stop-color: #64F0FA" offset="0"/>
-      <stop style="stop-color: #EF6CF9" offset="1">
-        <animate attributeName="offset" values="1; 1; 1; 0; 1; 1; 1" dur="15s" repeatCount="indefinite"/>
-        <animate attributeName="stop-color" values="#EF6CF9; red; #EF6CF9" dur="15s" repeatCount="indefinite"/>
+    <linearGradient id="metagame-fill" x1="0" x2="0" y1="1" y2="0.35">
+      <stop style="stop-color: #64F0FA" offset="0.25"/>
+      <stop style="stop-color: #EF6CF9" offset="0.6">
+        <animate attributeName="offset" values="0.7; 0.7; 0.7; 0; 0.7; 0.7; 0.7" dur="15s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="#EF6CF9; #EF6CF9; red; #EF6CF9; #EF6CF9" dur="15s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
     <linearGradient id="season-fill" x1="1058" x2="1057" y1="1975" y2="1875" gradientUnits="userSpaceOnUse">
@@ -97,11 +95,13 @@
   <path id="arc" transform="scale(-1)" d="m -350,-650 a 700,600 0 0 1 -700,400 a 700,600 0 0 1 -700,-400"/>
   <text class="title bg">
     <textPath xlink:href="#arc" startOffset="850">
-      <tspan>Player of the Season</tspan>
+     <animate attributeName="startOffset" values="-900;2500" dur="15s" repeatCount="indefinite"/>
+     <tspan>Player of the Season</tspan>
     </textPath>
   </text>
   <text class="title">
     <textPath xlink:href="#arc" startOffset="850">
+      <animate attributeName="startOffset" values="-900;2500" dur="15s" repeatCount="indefinite"/>
       <tspan>Player of the Season</tspan>
     </textPath>
   </text>
