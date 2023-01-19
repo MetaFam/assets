@@ -82,7 +82,7 @@
         <animate attributeName="stop-color" values="#EF6CF9; #EF6CF9; red; #EF6CF9; #EF6CF9" dur="15s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
-    <linearGradient id="season-fill" x1="1058" x2="1057" y1="1975" y2="1875" gradientUnits="userSpaceOnUse">
+    <linearGradient id="season-fill" x1="0" x2="0.05" y1="1" y2="0">
       <stop style="stop-color: #F56FFE" offset="0">
       </stop>
       <stop style="stop-color: #4FC4D5" offset="1">
