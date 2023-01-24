@@ -1,5 +1,5 @@
 <svg version="1.1" viewBox="0 0 2048 2048" xmlns="http://www.w3.org/2000/svg" xmlns:html="http://www.w3.org/1999/xhtml">
-  <title>MetaGame’s Season Ⅷ Player: @dysbulic</title>
+  <title>MetaGame’s Player of Season Ⅷ: @dysbulic</title>
   <html:link rel="shortcut icon" href="https://chiev.es/favicon.svg" type="image/svg+xml"/>
   <defs>
     <filter id="white-blur" x="-150%" y="-150%" width="300%" height="300%">
@@ -130,13 +130,13 @@
   <path id="arc" transform="scale(-1)" d="m -350,-750 l 0,100 a 700,600 0 0 1 -700,400 a 700,600 0 0 1 -700,-400 l 0,-100"/>
   <text class="title bg">
     <textPath href="#arc" startOffset="900">
-     <animate attributeName="startOffset" values="2550; 950; 950; -800" keyTimes="0; 0.25; 0.75; 1" dur="15s" repeatCount="indefinite"/>
-     <tspan>Player of the Season</tspan>
+      <animate attributeName="startOffset" values="2550; 950; 950; -800" keyTimes="0; 0.25; 0.75; 1" dur="15s" repeatCount="indefinite"/>
+      <tspan>Player of the Season</tspan>
     </textPath>
   </text>
   <text class="title">
     <textPath href="#arc" startOffset="-800">
-     <animate attributeName="startOffset" values="2550; 950; 950; -800" keyTimes="0; 0.25; 0.75; 1" dur="15s" repeatCount="indefinite"/>
+      <animate attributeName="startOffset" values="2550; 950; 950; -800" keyTimes="0; 0.25; 0.75; 1" dur="15s" repeatCount="indefinite"/>
       <tspan>Player of the Season</tspan>
     </textPath>
   </text>
