@@ -245,18 +245,25 @@
        style="color-interpolation-filters:sRGB;"
        inkscape:menu-tooltip="Gives a turbulent pointillist HSL sensitive transparency"
        inkscape:menu="Scatter"
-       height="1.0502312"
-       width="1.0451225"
-       y="-0.025115625"
-       x="-0.022561246"
+       height="200%"
+       width="200%"
+       y="0%"
+       x="-50%"
        id="filter7701">
       <feTurbulence
          seed="50"
          type="fractalNoise"
-         baseFrequency="1"
+         baseFrequency="0"
          numOctaves="3"
          result="result1"
-         id="feTurbulence7683" />
+         id="feTurbulence7683">
+         <animate
+            attributeName="baseFrequency"
+            dur="10s"
+            repeatCount="indefinite"
+            values="0;0;1;5"
+            keyTimes="0;0.25;0.75;1"/>
+      </feTurbulence>
       <feColorMatrix
          type="luminanceToAlpha"
          in="SourceGraphic"
@@ -295,12 +302,28 @@
          k1="1"
          id="feComposite7697" />
       <feDisplacementMap
-         scale="15"
+         scale="0"
          xChannelSelector="R"
          yChannelSelector="A"
          in2="result1"
          result="result92"
-         id="feDisplacementMap7699" />
+         id="feDisplacementMap7699">
+         <animate
+            attributeName="scale"
+            dur="10s"            repeatCount="indefinite"
+            values="0;0;150"
+            keyTimes="0;0.25;1"/>
+      </feDisplacementMap>
+      <feComponentTransfer>
+         <feFuncA type="linear" slope="1">
+         <animate
+            attributeName="slope"
+            dur="10s"
+            repeatCount="indefinite"
+            values="1;1;0"
+            keyTimes="0;0.25;1"/>
+         </feFuncA>  
+      </feComponentTransfer>
     </filter>
   </defs>
   <g
